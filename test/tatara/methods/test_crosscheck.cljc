@@ -5,7 +5,7 @@
   smoke that asserts structural invariants only (resolved + worklist == total; coverage =
   resolved/total; stable brand resolutions)."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             [tatara.methods.analyze :as az]
             [tatara.methods.crosscheck :as cc]))

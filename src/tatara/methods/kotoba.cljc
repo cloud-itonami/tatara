@@ -17,7 +17,7 @@
   Deterministic: the caller supplies tx-id + as-of (no wall clock) → resume-safe.
 
   cljc-native (real keywords). Pure fns; file I/O only behind #?(:clj …)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.edn :as edn])))
 
 ;; ── sha-256 host seam ─────────────────────────────────────────────────────────

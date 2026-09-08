@@ -7,7 +7,7 @@
   graph + the filesystem, never hand-edited, so it cannot drift from reality.
 
   cljc-native; reuses analyze + crosscheck. File I/O only behind #?(:clj …)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             [tatara.methods.analyze :as az]
             [tatara.methods.crosscheck :as cc]))

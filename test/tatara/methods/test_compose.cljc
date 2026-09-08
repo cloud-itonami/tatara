@@ -6,7 +6,7 @@
   counts, the resilience framing (G2 — only counts representable, no target attr), and that the
   derived datoms are flagged."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             [tatara.methods.analyze :as az]
             [tatara.methods.compose :as compose]))

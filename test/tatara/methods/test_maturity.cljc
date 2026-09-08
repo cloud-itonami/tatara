@@ -5,7 +5,7 @@
   pin that the derived metrics match analyze and that the renderer reflects checklist status
   honestly (✅ / 未)."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             [tatara.methods.analyze :as az]
             [tatara.methods.crosscheck :as cc]

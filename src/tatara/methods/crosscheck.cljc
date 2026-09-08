@@ -11,14 +11,14 @@
 
   Pure measurement — it MUTATES nothing and asserts no fact; the output is a :derived report +
   worklist. cljc-native (clojure.edn). File I/O only behind #?(:clj …)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             [tatara.methods.analyze :as az]))
 
 (defn- norm
   "Lowercase, strip everything but a-z0-9 (so org.corp.kr.sk-hynix ≈ skhynix)."
   [s]
-  (-> (str s) str/lower-case (str/replace #"[^a-z0-9]" "")))
+  (-> (str s) str/lower (str/replace #"[^a-z0-9]" "")))
 
 (defn- last-seg [id] (last (str/split (str id) #"\.")))
 

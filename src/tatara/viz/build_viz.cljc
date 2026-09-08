@@ -12,7 +12,7 @@
   data inlined as a JSON constant. Aggregate-first RESILIENCE map, NEVER a target-list (G2).
 
   Run:  bb -cp 20-actors -e \"(require 'tatara.viz.build-viz)(tatara.viz.build-viz/-main)\""
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             #?(:clj [clojure.edn :as edn])
             [tatara.methods.analyze :as az]
@@ -141,7 +141,7 @@
                {:lat (:station/lat s) :lon (:station/lon s) :col "#7fb1c9" :w 0 :kind "station"
                 :nm (str "⌁ " (:station/name s)) :cc (:station/country s "")
                 :info [(str "cable landing station (watatsuna)")
-                       (str "chokepoint(s): " (clojure.string/join ", " (map name (:station/chokepoint s))))]})
+                       (str "chokepoint(s): " (str/join ", " (map name (:station/chokepoint s))))]})
              (filter :station/id (edn/read-string (slurp watatsuna-seed)))))))
 
 (defn- composition-bars

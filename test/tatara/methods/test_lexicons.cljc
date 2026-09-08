@@ -8,7 +8,7 @@
     write surface too, not just the store)."
   (:require [clojure.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.edn :as edn]
             [cheshire.core :as j]
             [tatara.methods.analyze :as az]))

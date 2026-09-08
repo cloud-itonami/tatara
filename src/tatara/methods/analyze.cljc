@@ -15,7 +15,7 @@
   There is no :worker/* / :person/* attribute; an individual worker is unrepresentable (G4).
 
   cljc-native (real keywords; clojure.edn reader). Pure fns; file I/O only behind #?(:clj …)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.edn :as edn])))
 
 ;; ── load ──────────────────────────────────────────────────────────────────────
