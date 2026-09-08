@@ -7,7 +7,7 @@
   aggregate SIZE, never a roster)."
   (:require [clojure.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [tatara.methods.analyze :as az]
             [tatara.methods.kotoba :as kt]))
 

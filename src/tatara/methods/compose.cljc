@@ -12,7 +12,7 @@
   world-supply globe. Aggregate-first, framed toward REDUNDANCY / safer routing / faster repair —
   NEVER interdiction (G2, mirrors watari/watatsuna): only counts-per-chokepoint are representable,
   there is no 'where to cut' attribute. cljc-native; file I/O only behind #?(:clj …)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             #?(:clj [clojure.edn :as edn])
             [tatara.methods.analyze :as az]))
