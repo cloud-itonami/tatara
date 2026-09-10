@@ -66,12 +66,12 @@ transit) and watatsuna (submarine-cable load) over the same keywords.
 |---|---|
 | `00-contracts/schemas/manufacturing-plant-ontology.kotoba.edn` | ontology (`:plant/* :hub/* :flow/* :concentration/*`) |
 | `data/seed-plant-graph.kotoba.edn` | bounded `:representative` seed |
-| `src/tatara/methods/analyze.cljc` | concentration / HHI / chokepoint / capacity engine |
-| `src/tatara/methods/kotoba.cljc` | content-addressed EAVT commit-DAG persistence |
-| `src/tatara/methods/autorun.cljc` | autonomous heartbeat → content-addressed commit-DAG (resume-safe) |
-| `src/tatara/methods/compose.cljc` → `resilience-composition.md` | cross-actor SSoT: 静 plants · 動 craft · 静-infra cable per chokepoint |
-| `src/tatara/methods/crosscheck.cljc` | measures :plant/operator ⇄ kabuto :company/id linkage (84%) + ingest worklist |
-| `src/tatara/methods/maturity.cljc` → `MATURITY.md` | generated maturity scorecard (R0→R1 checklist, can't drift) |
+| `src/tatara/methods/analyze.kotoba` | concentration / HHI / chokepoint / capacity engine |
+| `src/tatara/methods/kotoba.kotoba` | content-addressed EAVT commit-DAG persistence |
+| `src/tatara/methods/autorun.kotoba` | autonomous heartbeat → content-addressed commit-DAG (resume-safe) |
+| `src/tatara/methods/compose.kotoba` → `resilience-composition.md` | cross-actor SSoT: 静 plants · 動 craft · 静-infra cable per chokepoint |
+| `src/tatara/methods/crosscheck.kotoba` | measures :plant/operator ⇄ kabuto :company/id linkage (84%) + ingest worklist |
+| `src/tatara/methods/maturity.kotoba` → `MATURITY.md` | generated maturity scorecard (R0→R1 checklist, can't drift) |
 | `00-contracts/lexicons/com/etzhayyim/tatara/*.json` | write surface (registerPlant/registerHub/recordFlow/registerChokepoint) |
 | `methods/test_{analyze,kotoba,autorun,lexicons,crosscheck,maturity,seed-integrity,viz,compose,robustness}.cljc` | 56 tests / 5,095 assertions |
 | `viz/build_viz.cljc` | globe generator (derives all coords from the seeds) |
