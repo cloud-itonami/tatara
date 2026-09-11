@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; tatara 鑪 — tests for the per-sector supply-diversity (effective source-country count).
-;; Run:  bb --classpath 20-actors 20-actors/tatara/methods/test_supply_diversity.cljc
+;; Run:  kbb --classpath 20-actors 20-actors/tatara/methods/test_supply_diversity.cljc
 (ns tatara.methods.test-supply-diversity
   "Tests for sector-supply-diversity — the EFFECTIVE number of independent source countries per
   sector (1/HHI, inverse-Simpson), the resilience benchmark complementing the chokepoint risk-lens.
