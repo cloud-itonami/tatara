@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; tatara 鑪 — tests for the per-country cross-sector chokepoint lens.
-;; Run:  bb --classpath 20-actors 20-actors/tatara/methods/test_cross_sector.cljc
+;; Run:  kbb --classpath 20-actors 20-actors/tatara/methods/test_cross_sector.cljc
 (ns tatara.methods.test-cross-sector
   "Tests for cross-sector-chokepoints — the per-country cross-sector view that surfaces the country
   whose dominance SPANS the most sectors (the systemic reshoring priority a per-sector HHI ranking

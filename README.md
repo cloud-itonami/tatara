@@ -22,7 +22,7 @@ Charter Rider §2(c) reciprocity axis; Wellbecoming §1.13). Enforced by constru
 ## Run
 
 ```bash
-bb test
+kbb -M:test
 # Testing tatara.methods.test-analyze
 # Testing tatara.methods.test-kotoba
 # … (10 suites)
@@ -30,19 +30,19 @@ bb test
 # ── tatara: ALL suites green ──
 
 # kabuto-linkage crosscheck → out/kabuto-crosscheck.md (24/29 = 83% linkage)
-bb -cp 20-actors -e "(require 'tatara.methods.crosscheck)(tatara.methods.crosscheck/-main)"
+kbb -cp 20-actors -e "(require 'tatara.methods.crosscheck)(tatara.methods.crosscheck/-main)"
 
 # concentration report → out/concentration-report.md
-bb -cp 20-actors -e "(require 'tatara.methods.analyze)(tatara.methods.analyze/-main)"
+kbb -cp 20-actors -e "(require 'tatara.methods.analyze)(tatara.methods.analyze/-main)"
 
 # autonomous heartbeat → LOCAL append-only kotoba Datom log (commit-DAG)
-bb -cp 20-actors -e "(require 'tatara.methods.autorun)(tatara.methods.autorun/-main)"
+kbb -cp 20-actors -e "(require 'tatara.methods.autorun)(tatara.methods.autorun/-main)"
 
 # maturity scorecard → MATURITY.md (R0→R1 checklist + live coverage/linkage)
-bb -cp 20-actors -e "(require 'tatara.methods.maturity)(tatara.methods.maturity/-main)"
+kbb -cp 20-actors -e "(require 'tatara.methods.maturity)(tatara.methods.maturity/-main)"
 
 # the three globes (open the .htm in a browser)
-bb -cp 20-actors -e "(require 'tatara.viz.build-viz)(tatara.viz.build-viz/-main)"
+kbb -cp 20-actors -e "(require 'tatara.viz.build-viz)(tatara.viz.build-viz/-main)"
 #   viz/plant-globe.htm          — (C) world plants by sector + export flows
 #   viz/world-supply-globe.htm   — (A) plants + live craft + cable stations, 3-way composed per chokepoint
 #   ../watari/viz/craft-globe.htm — (B) watari's first visualization

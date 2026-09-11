@@ -11,7 +11,7 @@
   Each globe is an orthographic canvas sphere (drag to rotate / auto-spin / click a point),
   data inlined as a JSON constant. Aggregate-first RESILIENCE map, NEVER a target-list (G2).
 
-  Run:  bb -cp 20-actors -e \"(require 'tatara.viz.build-viz)(tatara.viz.build-viz/-main)\""
+  Run:  kbb -cp 20-actors -e \"(require 'tatara.viz.build-viz)(tatara.viz.build-viz/-main)\""
   (:require [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             #?(:clj [clojure.edn :as edn])

@@ -1,7 +1,7 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; tatara 鑪 — bb-native test runner (Clojure / babashka; no shell).
 ;;
-;;   bb run_tests.clj      ; run from anywhere
+;;   kbb run_tests.cljk      ; run from anywhere
 ;;
 ;; The standalone repository's src and test roots are derived from THIS file.
 (require '[babashka.classpath :as cp]
