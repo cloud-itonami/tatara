@@ -1,7 +1,7 @@
 # tatara 鑪 — agent reference
 
 > World manufacturing-plant + logistics geographic knowledge graph. Tier-B, R0 design-only.
-> ADR-2606171800. Read the repo-root `CLAUDE.md` first; this file only adds actor-local rules.
+> ADR-2606171800. Read the repo-root `AGENTS.md` first; this file only adds actor-local rules.
 
 ## Identity
 
