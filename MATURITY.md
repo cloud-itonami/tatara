@@ -49,7 +49,7 @@
 | item | status |
 |---|:--:|
 | ADR-2606171800 (master) | ✅ |
-| manifest + README + CLAUDE.md | ✅ |
+| manifest + README + AGENTS.md | ✅ |
 | ontology (manufacturing-plant-ontology) | ✅ |
 | seed graph (:representative) | ✅ |
 | analyze engine (HHI / chokepoint / capacity) | ✅ |
